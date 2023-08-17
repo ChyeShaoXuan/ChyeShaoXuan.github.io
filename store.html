@@ -25,12 +25,17 @@
             text-decoration: none;
             color: white;
             padding: 10px;
+            border: 1px solid black;
         }
         .content {
             padding: 20px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2017_26/2053956/170627-better-grocery-store-main-se-539p.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
         }
         .product {
             background-color: white;
@@ -100,30 +105,53 @@
             <h2>Spinach</h2>
             <img src="https://cdn.britannica.com/30/82530-050-79911DD4/Spinach-leaves-vitamins-source-person.jpg" alt="Spinach">
             <p>Price: $3.49 per kg</p>
-            <php>
-                <div class="button-container">
+            <div class="button-container">
                 <form action="add_to_cart.php" method="post">
                     <input type="hidden" name="product" value="Spinach">
                     <button class="button" type="submit">Add to Cart</button>
                 </form>
-            </php>
             </div>
         </div>
+        
         
         <div class="product">
             <h2>Broccoli</h2>
             <img src="https://cdn.britannica.com/25/78225-050-1781F6B7/broccoli-florets.jpg" alt="Broccoli">
             <p>Price: $4.99 per kg</p>
-            <php>
-                <div class="button-container">
+            
+            <div class="button-container">
                 <form action="add_to_cart.php" method="post">
                     <input type="hidden" name="product" value="Broccoli">
                     <button class="button" type="submit">Add to Cart</button>
                 </form>
-            </php>
+            </div>
+        </div>
+
+        <div class="product">
+            <h2>Royal Basmati Rice</h2>
+            <img src="https://i.etsystatic.com/6794685/r/il/2b9d7f/3173381706/il_570xN.3173381706_lnap.jpg" alt="Royal Basmati Rice">
+            <p>Price: $15.99</p>
+            <div class="button-container">
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Royal Basmati Rice">
+                    <button class="button" type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        
+
+        <div class="product">
+            <h2>Nissin Cup Noodles (Assorted Flavors)</h2>
+            <img src="https://df3k2q0k3bu2n.cloudfront.net/static/images/nissin-instant-cup-noodles-75g_sq.jpg" alt="Nissin Cup Noodles">
+            <p>Price: $3.49</p>
+            <div class="button-container">
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Nissin Cup Noodles">
+                    <button class="button" type="submit">Add to Cart</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 <div class="footer">
     <p> Check out your items!</p>
     <form action="checkout.php" method="post">
@@ -131,7 +159,7 @@
     </form>
 </div>
     <div class="footer">
-        <p>&copy; 2023 Online Grocery Store. All rights reserved.</p>
+        <p>&copy; 2023 Walt Online Grocery Store. All rights reserved.</p>
     </div>
 </body>
 </html>
